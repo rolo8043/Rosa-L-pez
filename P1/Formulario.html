@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta charset="UTF-8">
+<title>Formulario</title>
+<link rel="stylesheet" href="CSS/Formulario.css">
+</head>
+<body>
+<meta> 
+
+<h1>CURRICULUM</h1>
+<form action="form.php">
+<fieldset>
+<legend>Información Basica</legend>
+  <label for="fname">Nombre</label><br>
+  <input type="text" id="fname" name="nombre" value="tunombre">
+  </form>
+<br><label for="alto">Altura en centimetros</label></br>
+<input type="number" id="alto" name="altura" min="0" max="300">
+<br><label for="email">email</label></br>
+<input type="email" id="email" name="email" required>
+<br><label for="fecha">Fecha de Nacimiento:</label></br>
+<input type="date" id="fecha" name="fecha" required></body>
+</fieldset>
+<fieldset>
+  <legend>Nacionalidad</legend>
+  <input type="radio" id="Español" name="nacionalidad" value="Español">
+  <label for="nacionalidad">Español</label>
+  <input type="radio" id="Comunitario (ue)" name="nacionalidad" value="Comunitario (ue)">
+  <label for="nacionalidad">Comunitario (ue)</label>
+  <input type="radio" id="No Comunitario" name="nacionalidad" value="No Comunitario">
+  <label for="nacionalidad">No Comunitario</label>
+</fieldset>
+<fieldset>
+  <legend>Estudios</legend>
+<select id="estudios" name="estudios">
+  <option id="ESO" value="ESO">ESO</option>
+  <option id="Grado Medio" value="Grado Medio">Grado Medio</option>
+  <option id="Grado Superior" value="Grado Superior">Grado Superior</option>
+  <option id="Bachillerato" value="Bachillerato">Bachillerato</option>
+  <option id="FPI" value="FPI">FPI</option>
+  <option id="Universidad" value="Universidad">Universidad</option>
+</select>
+</fieldset>
+<fieldset>
+  <legend>Idiomas</legend>
+  <label for="idiomas">catalán</label>
+  <input type="checkbox" id="catalán" name="idiomas[]" value="catalán">
+  <label for="idiomas">castellano</label>
+  <input type="checkbox" id="castellano" name="idiomas[]" value="castellano">
+  <label for="idiomas">ingles</label>
+  <input type="checkbox" id="ingles" name="idiomas[]" value="ingles">
+  <label for="idiomas">chino</label>
+  <input type="checkbox" id="chino" name="idiomas[]" value="chino">
+</fieldset>
+<fieldset>
+<br><input type="submit" value="Enviar">
+<input type="submit" value="Cancelar">
+</fieldset>
+</from>
+</body>
+</html>

@@ -1,0 +1,11 @@
+body{
+    background-image: url(fondo.jpg);
+}
+fieldset{
+    border-color: orange;
+    border-radius: 0.5cm;
+    border-block-start-color: yellow;
+    border-style:groove;
+    border-width: 5px;
+}
+
